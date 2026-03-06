@@ -22,17 +22,14 @@ jobs:
           java-version: 21
           cache: maven
 
+      - name: Give permission to mvnw
+        run: chmod +x mvnw
+
       - name: Build and Test
         run: ./mvnw clean verify
 
-      - name: Upload JAR Artifact
+      - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: application-jar
           path: target/*.jar
-
-      - name: Upload Test Site
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-report
-          path: target/site/**

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UsersController {
 
-    private UsersService usersService;
+    private final UsersService usersService;
 
     public UsersController(UsersService usersService){
         this.usersService = usersService;

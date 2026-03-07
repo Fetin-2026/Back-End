@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 
 @Service
 public class UsersService {
-    private UsersRepository usersRepository;
+    private final UsersRepository usersRepository;
 
     private static final Pattern EMAIL_PATTERN = Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[a-z]+$");
 

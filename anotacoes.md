@@ -1,4 +1,4 @@
-----------NEON---------------------------------
+## NEON
 para o banco de dados ficar online usei o Neon
 plano gratuito tem os seguintes limites:
 0.5 GB de banco
@@ -14,7 +14,7 @@ autoslep quando nao for usado
 
 536.870.912 bytes ÷ 164 bytes = 3.2 milhões de registros
 
-----------Render---------------------------------
+## Render
 para a api ficar online usei o Render
 plano gratuito tem os seguintes limites:
 api "dorme" apos 15 min
